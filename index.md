@@ -2,6 +2,7 @@ Are we missing an event or group? Open an issue on our [GitHub site](https://git
 
 
 ### Events
+
 |State|Region|Event|Date|Cost|Description|
 |---|---|---|---|---|---|
 |OK|Tulsa|[Tulsa Azure Dev Days](http://azuredevdays.com)|Monday Oct 22 2018|Free| |
@@ -12,6 +13,7 @@ Are we missing an event or group? Open an issue on our [GitHub site](https://git
 
 
 ### Groups
+
 |State|Region|Group|Date|Location|Description|
 |---|---|---|---|---|---|
 |TX|Austin|[Austin .NET User Group](http://adnug.org)|2nd Monday|Austin Microsoft Office|Come and learn about everything .NET.|
