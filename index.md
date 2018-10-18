@@ -24,3 +24,10 @@ Are we missing an event or group? Open an issue on our [GitHub site](https://git
 |TX|Austin|[Austin Cloud Native Meetup](https://www.meetup.com/Austin-Cloud-Native-Meetup)|
 |TX|Austin|[Austin F# Meetup](https://www.meetup.com/Austin-F-Meetup/)|
 |TX|Austin|[Austin SQL Server User Group](https://www.meetup.com/Austin-SQL-Server-User-Group/) aka. Capitol Area Central Texas Users of SQL Server (CACTUSS)|
+
+
+<script type="text/javascript">
+    $(document).ready( function () {
+        $('table:first').DataTable();
+    } );
+</script>
