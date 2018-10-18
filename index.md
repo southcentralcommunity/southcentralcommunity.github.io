@@ -1,6 +1,3 @@
-# SouthCentralCommunity.com
-## Groups & Events interesting to the local developer community
-
 Are we missing an event or group? Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues) and we will review.
 
 
