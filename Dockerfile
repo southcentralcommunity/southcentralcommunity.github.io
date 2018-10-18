@@ -1,14 +1,8 @@
-FROM jekyll/builder
-
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
-RUN bundle install
-
 FROM jekyll/jekyll
 
-VOLUME /src
-EXPOSE 4000
+COPY Gemfile .
+COPY Gemfile.lock .
 
-WORKDIR /src
-ENTRYPOINT ["jekyll", "serve", "-H", "0.0.0.0"]
+RUN bundle install --quiet --clean
+
+CMD ["jekyll", "serve"]
