@@ -4,7 +4,7 @@ keywords: southcentral community technical homepage
 tags: [homepage]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: On this site you will find information about the groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)
+summary: Information about the groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)
 ---
 
 # SouthCentralCommunity.com
