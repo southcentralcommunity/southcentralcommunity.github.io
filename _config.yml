@@ -38,7 +38,7 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: SouthCentralCommunity.com Feedback
+feedback_subject_line: SouthCentralCommunity.com
 
 feedback_email: shawn@shawnweisfeld.com
 # used as a contact email for the Feedback link in the top navigation bar
@@ -104,11 +104,11 @@ defaults:
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
-- home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
-- other
+# - home_sidebar
+ - mydoc_sidebar
+# - product1_sidebar
+# - product2_sidebar
+# - other
 
 description: "Information about the groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)"
 # the description is used in the feed.xml file
