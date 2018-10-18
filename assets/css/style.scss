@@ -2,3 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+
+header, section, footer {
+    width: 100%;
+    float: none;
+    position: relative;
+}
