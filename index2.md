@@ -1,5 +1,5 @@
 ---
-layout:events
+layout: events
 ---
 
 Are we missing an event or group? Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues) and we will review.
