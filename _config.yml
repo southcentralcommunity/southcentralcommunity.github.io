@@ -10,7 +10,7 @@ collections:
     output: true
   states:
     output: true
-    permalink: /state/:path/
+    permalink: /states/:path/
   regions:
     output: true
-    permalink: /region/:path/
+    permalink: /regions/:path/
