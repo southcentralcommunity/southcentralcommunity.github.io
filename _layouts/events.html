@@ -26,7 +26,9 @@ layout: default
             </td>
             <td>
                 {{ event.start_date | date: "%A, %B %-d, %Y"}}
-                {{ event.end_date | date: "%A, %B %-d, %Y"}}
+                {% if event.end_date %}
+                - {{ event.end_date | date: "%A, %B %-d, %Y"}}
+                {% endif %}
             </td>
             <td>
                 {{ event.cost }}
