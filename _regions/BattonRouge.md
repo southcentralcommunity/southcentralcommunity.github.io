@@ -2,5 +2,5 @@
 layout: region
 state: LA
 region: BattonRouge
-name: Batton Rouge
+name: Batton Rouge, LA
 ---

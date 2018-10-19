@@ -2,5 +2,5 @@
 layout: region
 state: TX
 region: Houston
-name: Houston
+name: Houston, TX
 ---

@@ -1,6 +1,6 @@
 ---
 state: TX
-region: ATX
+region: Austin
 title: Austin .NET User Group
 group_url: http://adnug.org/
 ---

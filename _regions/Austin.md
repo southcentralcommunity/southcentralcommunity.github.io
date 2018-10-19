@@ -2,6 +2,5 @@
 layout: region
 state: TX
 region: Austin
-name: Austin
+name: Austin, TX
 ---
-blah
