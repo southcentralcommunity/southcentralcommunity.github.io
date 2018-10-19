@@ -2,8 +2,11 @@ header {
     padding-bottom: 20px;
 }
 
-.nav ul 
-{
+.nav ul {
     list-style: none;
     padding-left: 0;
+}
+
+.nav > ul li {
+    padding-top: 10px;
 }
