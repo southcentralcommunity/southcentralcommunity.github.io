@@ -1,8 +1,9 @@
 ---
 state: TX
 region: Austin
-title: Data Day Texas 2019
-event_url: http://datadaytexas.com/
-start_date: 2018-01-26
+title: Serverless Open Hack
+event_url: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x4714091abcd
+start_date: 2018-10-23
+end_date: 2018-10-25
 cost: Free
 ---
