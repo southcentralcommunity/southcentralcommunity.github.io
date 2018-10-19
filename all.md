@@ -1,4 +1,0 @@
----
-layout: region
-region: ALL
----

@@ -1,6 +1,6 @@
 ---
 state: TX
-region: Austin
+region: ATX
 title: Austin Azure Meetup
 group_url: https://www.meetup.com/azureaustin/
 ---
