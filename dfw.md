@@ -1,3 +1,4 @@
 ---
 layout: region
+region: dfw
 ---
