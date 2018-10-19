@@ -25,7 +25,7 @@
             </header>
             <section>
               
-              <h2>Events:</h2>
+              <h2>Events in {{page.region}}:</h2>
               <table>
                   <thead>
                     <tr>
@@ -37,7 +37,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                      {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", "page.region" %} 
+                      {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", "{{page.region}}" %} 
                       {% for event in sortedEvents %}
                       <tr>
                           <td>
