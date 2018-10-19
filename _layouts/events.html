@@ -13,7 +13,8 @@ layout: default
       </tr>
     </thead>
     <tbody>
-        {% for event in site.events %}
+        {% assign sortedEvents = site.events | sort: 'start_date' %} 
+        {% for event in sortedEvents %}
         <tr>
             <td>
                 {{ event.state }}
