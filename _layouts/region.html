@@ -4,52 +4,27 @@ layout: default
 
 {{ content }}
 
-<h2>Events in {{page.name}}:</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Event</th>
-        <th>Date</th>
-        <th>Cost</th>
-    </tr>
-    </thead>
-    <tbody>
+<h2>{{page.name}}</h2>
 
-        {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", page.region %}
-        {% for event in sortedEvents %}
-        <tr>
-            <td>
-                <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a>
-            </td>
-            <td>
-                {{ event.start_date | date: "%A, %B %-d, %Y"}}
-                {% if event.end_date %}
-                - {{ event.end_date | date: "%A, %B %-d, %Y"}}
-                {% endif %}
-            </td>
-            <td>
-                {{ event.cost }}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<h3>Events:</h3>
+<ul>
+    {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", page.region %}
+    {% for event in sortedEvents %}
+        <li>
+            <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a> - {{ event.start_date | date: "%A, %B %-d, %Y"}}
+            {% if event.end_date %}
+            to {{ event.end_date | date: "%A, %B %-d, %Y"}}
+            {% endif %} ({{ event.cost }})
+        </li>
+    {% endfor %}
+</ul>
 
-<h2>Groups in {{page.name}}:</h2>
-<table>
-    <thead>
-    <tr>
-        <th>Group</th>
-    </tr>
-    </thead>
-    <tbody>
-        {% assign sortedGroups = site.groups | sort: 'title' | where: "region", page.region %}
-        {% for group in sortedGroups %}
-        <tr>
-            <td>
-                <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<h3>Groups:</h3>
+<ul>
+    {% assign sortedGroups = site.groups | sort: 'title' | where: "region", page.region %}
+    {% for group in sortedGroups %}
+        <li>
+            <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
