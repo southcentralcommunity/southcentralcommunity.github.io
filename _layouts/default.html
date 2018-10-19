@@ -47,7 +47,7 @@
                               {{ event.region }}
                           </td>
                           <td>
-                              <a href="{{ event.event_url }}">{{ event.title }}</a>
+                              <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a>
                           </td>
                           <td>
                               {{ event.start_date | date: "%A, %B %-d, %Y"}}
@@ -73,7 +73,12 @@
                     </tr>
                   </thead>
                   <tbody>
-                      {% for group in site.groups %}
+                      {% assign groupsByState = site.groups | group_by: 'state' %}
+                      {% assign groupsByStateRegion = groupsByState | group_by: 'region' %}
+
+                      {% for state in groupsByStateRegion %}
+                      {% for region in state %}
+                      {% for group in region %}
                       <tr>
                           <td>
                               {{ group.state }}
@@ -82,9 +87,11 @@
                               {{ group.region }}
                           </td>
                           <td>
-                              <a href="{{ group.group_url }}">{{ group.title }}</a>
+                              <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>
                           </td>
                       </tr>
+                      {% endfor %}
+                      {% endfor %}
                       {% endfor %}
                   </tbody>
               </table>
