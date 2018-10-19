@@ -8,7 +8,7 @@ collections:
     output: true
   groups:
     output: true
-    state:
+    states:
       output: true
-        region:
+        regions:
           output: true
