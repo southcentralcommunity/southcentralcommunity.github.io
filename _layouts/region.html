@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/site.css">
+
+    {% seo %}
+
+  </head>
+  <body>
+
+        <div class="container">
+            <header>
+                <h1>{{ site.title | default: site.github.repository_name }}</h1>
+                
+                <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+                Are we missing an event or group? Open an issue on our <a href="https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues">GitHub site</a> and we will review.
+        
+            </header>
+            <section>
+              
+              <h2>Events:</h2>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>State</th>
+                      <th>Region</th>
+                      <th>Event</th>
+                      <th>Date</th>
+                      <th>Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", "DFW" %} 
+                      {% for event in sortedEvents %}
+                      <tr>
+                          <td>
+                              {{ event.state }}
+                          </td>
+                          <td>
+                              {{ event.region }}
+                          </td>
+                          <td>
+                              <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a>
+                          </td>
+                          <td>
+                              {{ event.start_date | date: "%A, %B %-d, %Y"}}
+                              {% if event.end_date %}
+                              - {{ event.end_date | date: "%A, %B %-d, %Y"}}
+                              {% endif %}
+                          </td>
+                          <td>
+                              {{ event.cost }}
+                          </td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+              </table>
+
+              <h2>Groups:</h2>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>State</th>
+                      <th>Region</th>
+                      <th>Group</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      {% for group in site.groups %}
+                      <tr>
+                          <td>
+                              {{ group.state }}
+                          </td>
+                          <td>
+                              {{ group.region }}
+                          </td>
+                          <td>
+                              <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>
+                          </td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+              </table>
+
+            {{ content }}
+        
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Generated on {{ site.time | date_to_rfc822 }}</small></p>
+            </footer>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+
+  </body>
+</html>
+
