@@ -37,7 +37,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                      {% assign sortedEvents = site.events | sort: 'start_date' | where: 'region', 'dfw' %} 
+                      {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", "dfw" %} 
                       {% for event in sortedEvents %}
                       <tr>
                           <td>
