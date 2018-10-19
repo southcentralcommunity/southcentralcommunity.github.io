@@ -63,6 +63,32 @@
                   </tbody>
               </table>
 
+              <h2>Groups:</h2>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>State</th>
+                      <th>Region</th>
+                      <th>Group</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      {% for group in site.groups %}
+                      <tr>
+                          <td>
+                              {{ group.state }}
+                          </td>
+                          <td>
+                              {{ group.region }}
+                          </td>
+                          <td>
+                              <a href="{{ group.group_url }}">{{ group.title }}</a>
+                          </td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+              </table>
+
             {{ content }}
         
             </section>
