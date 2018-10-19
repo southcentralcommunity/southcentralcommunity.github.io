@@ -8,7 +8,7 @@ layout: default
 
 <h3>Events:</h3>
 <ul>
-    {% assign sortedEvents = site.events | sort: 'start_date' | where: "abbr", page.state %}
+    {% assign sortedEvents = site.events | sort: 'start_date' | where: "state", page.abbr %}
     {% for event in sortedEvents %}
         <li>
             <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a> - {{ event.region }} - {{ event.start_date | date: "%A, %B %-d, %Y"}}
@@ -21,7 +21,7 @@ layout: default
 
 <h3>Groups:</h3>
 <ul>
-    {% assign sortedGroups = site.groups | sort: 'title' | where: "abbr", page.state %}
+    {% assign sortedGroups = site.groups | sort: 'title' | where: "state", page.abbr %}
     {% for group in sortedGroups %}
         <li>
             <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a> ({{ group.region }}) {{ group.description }}
