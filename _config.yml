@@ -4,5 +4,11 @@ title: SouthCentralCommunity.com
 description: Information about the groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)
 
 collections:
-  - events
-  - groups
+  events:
+    output: true
+  groups:
+    output: true
+    state:
+      output: true
+        region:
+          output: true
