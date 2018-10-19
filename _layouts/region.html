@@ -37,7 +37,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                      {% assign sortedEvents = site.events | where: "region", "[page.region]" | sort: "start_date" %} 
+                        {% capture page_region %}
+                            {{ page.region }}
+                        {% endcapture %}
+                    
+                      {% assign sortedEvents = site.events | where: "region", "page_region" | sort: "start_date" %} 
                       {% for event in sortedEvents %}
                       <tr>
                           <td>
