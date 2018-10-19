@@ -25,8 +25,8 @@ layout: default
                 <a href="{{ event.event_url }}">{{ event.title }}</a>
             </td>
             <td>
-                {{ event.start_date }}
-                {{ event.end_date }}
+                {{ event.start_date | date: "%A, %B %-d, %Y"}}
+                {{ event.end_date | date: "%A, %B %-d, %Y"}}
             </td>
             <td>
                 {{ event.cost }}
