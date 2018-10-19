@@ -24,7 +24,7 @@ layout: default
     {% assign sortedGroups = site.groups | sort: 'title' | where: "region", page.region %}
     {% for group in sortedGroups %}
         <li>
-            <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>{{ group.description }}
+            <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a> {{ group.description }}
         </li>
     {% endfor %}
 </ul>
