@@ -73,12 +73,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                      {% assign groupsByState = site.groups | group_by: 'state' %}
-                      {% assign groupsByStateRegion = groupsByState | group_by: 'region' %}
-
-                      {% for state in groupsByStateRegion %}
-                      {% for region in state %}
-                      {% for group in region %}
+                      {% for group in site.groups %}
                       <tr>
                           <td>
                               {{ group.state }}
@@ -90,8 +85,6 @@
                               <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a>
                           </td>
                       </tr>
-                      {% endfor %}
-                      {% endfor %}
                       {% endfor %}
                   </tbody>
               </table>
