@@ -20,13 +20,37 @@
                 
                 <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-                Are we missing an event or group? Open an issue on our <a href="https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues">GitHub site</a> and we will review.
+                <p>Are we missing an event or group? Open an issue on our <a href="https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues">GitHub site</a> and we will review.</p>
         
             </header>
             <section>
               <div class="row">
                   <div class="col-2">
-                    nav
+                    <ul>
+                      <li>
+                        States
+                        <ul>
+                            {% assign sortedStates = site.states | sort: 'state' %}
+                            {% for state in sortedStates %}
+                                <li>
+                                    <a href="{{ state.url }}">{{ state.state }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                      </li>
+                      <li>
+                        Regions
+                        <ul>
+                            {% assign sortedRegions = site.regions | sort: 'name' %}
+                            {% for region in sortedRegions %}
+                                <li>
+                                    <a href="{{ region.url }}">{{ region.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                      </li>
+                    </ul>
+
                   </div>
                   <div class="col-10">
                     {{ content }}
