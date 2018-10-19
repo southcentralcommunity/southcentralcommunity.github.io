@@ -19,10 +19,50 @@
                 <h1>{{ site.title | default: site.github.repository_name }}</h1>
                 
                 <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+                Are we missing an event or group? Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues) and we will review.
         
             </header>
             <section>
-        
+              
+              <h2>Events:</h2>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>State</th>
+                      <th>Region</th>
+                      <th>Event</th>
+                      <th>Date</th>
+                      <th>Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      {% assign sortedEvents = site.events | sort: 'start_date' %} 
+                      {% for event in sortedEvents %}
+                      <tr>
+                          <td>
+                              {{ event.state }}
+                          </td>
+                          <td>
+                              {{ event.region }}
+                          </td>
+                          <td>
+                              <a href="{{ event.event_url }}">{{ event.title }}</a>
+                          </td>
+                          <td>
+                              {{ event.start_date | date: "%A, %B %-d, %Y"}}
+                              {% if event.end_date %}
+                              - {{ event.end_date | date: "%A, %B %-d, %Y"}}
+                              {% endif %}
+                          </td>
+                          <td>
+                              {{ event.cost }}
+                          </td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+              </table>
+
             {{ content }}
         
             </section>
