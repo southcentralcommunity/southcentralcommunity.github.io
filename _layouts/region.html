@@ -14,12 +14,8 @@ layout: default
     </tr>
     </thead>
     <tbody>
-        {% if page.region = "ALL"}
-        {% assign sortedEvents = site.events | sort: 'start_date' %} 
-        {% else %}
-        {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", page.region %} 
-        {% endif %}
 
+        {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", page.region %}
         {% for event in sortedEvents %}
         <tr>
             <td>
@@ -55,12 +51,7 @@ layout: default
     </tr>
     </thead>
     <tbody>
-        {% if page.region = "ALL"}
-        {% assign sortedGroups = site.groups | sort: 'title' %} 
-        {% else %}
-        {% assign sortedGroups = site.groups | sort: 'title' | where: "region", page.region %} 
-        {% endif %}
-
+        {% assign sortedGroups = site.groups | sort: 'title' | where: "region", page.region %}
         {% for group in sortedGroups %}
         <tr>
             <td>
