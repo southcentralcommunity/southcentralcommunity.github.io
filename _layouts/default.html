@@ -25,7 +25,7 @@
             <nav>
               <ul class="nav">
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">States</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">By State</a>
                     <div class="dropdown-menu">
                         {% assign sortedStates = site.states | sort: 'title' %}
                         {% for state in sortedStates %}
@@ -34,7 +34,7 @@
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Regions</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">By Region</a>
                     <div class="dropdown-menu">
                         {% assign sortedRegions = site.regions | sort: 'title' %}
                         {% for region in sortedRegions %}
@@ -43,7 +43,7 @@
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Topics</a>
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">By Topic</a>
                       <div class="dropdown-menu">
                           {% assign sortedTopics = site.topics | sort: 'title' %}
                           {% for topic in sortedTopics %}
