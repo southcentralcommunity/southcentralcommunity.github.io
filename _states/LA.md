@@ -1,5 +1,5 @@
 ---
 layout: state
 abbr: LA
-state: Louisiana
+title: Louisiana
 ---

@@ -1,5 +1,5 @@
 ---
 layout: state
 abbr: AR
-state: Arkansas
+title: Arkansas
 ---

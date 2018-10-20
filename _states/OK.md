@@ -1,5 +1,5 @@
 ---
 layout: state
 abbr: OK
-state: Oklahoma
+title: Oklahoma
 ---

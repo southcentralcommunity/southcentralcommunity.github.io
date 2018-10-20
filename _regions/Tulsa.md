@@ -2,5 +2,5 @@
 layout: region
 state: OK
 region: Tulsa
-name: Tulsa, OK
+title: Tulsa, OK
 ---

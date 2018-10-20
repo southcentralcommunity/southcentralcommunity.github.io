@@ -27,18 +27,18 @@
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">States</a>
                     <div class="dropdown-menu">
-                        {% assign sortedStates = site.states | sort: 'state' %}
+                        {% assign sortedStates = site.states | sort: 'title' %}
                         {% for state in sortedStates %}
-                          <a class="dropdown-item" href="{{ state.url }}">{{ state.state }}</a>
+                          <a class="dropdown-item" href="{{ state.url }}">{{ state.title }}</a>
                         {% endfor %}
                     </div>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Regions</a>
                     <div class="dropdown-menu">
-                        {% assign sortedRegions = site.regions | sort: 'name' %}
+                        {% assign sortedRegions = site.regions | sort: 'title' %}
                         {% for region in sortedRegions %}
-                          <a class="dropdown-item" href="{{ region.url }}">{{ region.name }}</a>
+                          <a class="dropdown-item" href="{{ region.url }}">{{ region.title }}</a>
                         {% endfor %}
                     </div>
                   </li>

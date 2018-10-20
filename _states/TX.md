@@ -1,5 +1,5 @@
 ---
 layout: state
 abbr: TX
-state: Texas
+title: Texas
 ---
