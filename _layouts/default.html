@@ -25,7 +25,7 @@
             <nav>
               <ul class="nav nav-fill">
                   <li class="nav-item dropdown">
-                    States
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">States</a>
                     <div class="dropdown-menu">
                         {% assign sortedStates = site.states | sort: 'state' %}
                         {% for state in sortedStates %}
@@ -34,7 +34,7 @@
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    Regions
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Regions</a>
                     <div class="dropdown-menu">
                         {% assign sortedRegions = site.regions | sort: 'name' %}
                         {% for region in sortedRegions %}
