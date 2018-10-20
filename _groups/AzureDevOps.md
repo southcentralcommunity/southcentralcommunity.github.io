@@ -1,7 +1,7 @@
 ---
 state: TX
 region: Austin
-title: Austin Azure Meetup
-group_url: https://www.meetup.com/azureaustin/
-topics: [ azure, webdev ]
+title: Azure DevOps User Group (ADOUG)
+group_url: https://www.meetup.com/Azure-DevOps-User-Group/
+topics: [ azure, devops ]
 ---
