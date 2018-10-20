@@ -6,4 +6,5 @@ event_url: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x471
 start_date: 2018-10-23
 end_date: 2018-10-25
 cost: Free
+topics: [ azure ]
 ---

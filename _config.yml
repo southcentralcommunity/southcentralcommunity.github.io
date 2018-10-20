@@ -14,3 +14,6 @@ collections:
   regions:
     output: true
     permalink: /regions/:path/
+  topics:
+    output: true
+    permalink: /topics/:path/
