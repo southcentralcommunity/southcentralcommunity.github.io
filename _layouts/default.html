@@ -21,42 +21,32 @@
                 <p>{{ site.description | default: site.github.project_tagline }}</p>
 
                 <p>Are we missing an event or group? Open an issue on our <a href="https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues">GitHub site</a> and we will review.</p>
-        
             </header>
+            <nav>
+              <ul class="nav nav-fill">
+                  <li class="nav-item dropdown">
+                    States
+                    <div class="dropdown-menu">
+                        {% assign sortedStates = site.states | sort: 'state' %}
+                        {% for state in sortedStates %}
+                          <a class="dropdown-item" href="{{ state.url }}">{{ state.state }}</a>
+                        {% endfor %}
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    Regions
+                    <div class="dropdown-menu">
+                        {% assign sortedRegions = site.regions | sort: 'name' %}
+                        {% for region in sortedRegions %}
+                          <a class="dropdown-item" href="{{ region.url }}">{{ region.name }}</a>
+                        {% endfor %}
+                    </div>
+                  </li>
+                </ul>
+            </nav>            
             <section>
-              <div class="row">
-                  <div class="col-2 nav">
-                    <ul>
-                      <li>
-                        States
-                        <ul>
-                            {% assign sortedStates = site.states | sort: 'state' %}
-                            {% for state in sortedStates %}
-                                <li>
-                                    <a href="{{ state.url }}">{{ state.state }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                      </li>
-                      <li>
-                        Regions
-                        <ul>
-                            {% assign sortedRegions = site.regions | sort: 'name' %}
-                            {% for region in sortedRegions %}
-                                <li>
-                                    <a href="{{ region.url }}">{{ region.name }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                      </li>
-                    </ul>
-
-                  </div>
-                  <div class="col-10">
-                    {{ content }}
-                  </div>
-                </div>              
-            </section>
+                {{ content }}
+              </section>
             <footer>
                 <p><small>Hosted on GitHub Pages &mdash; Generated on {{ site.time | date_to_rfc822 }}</small></p>
             </footer>
