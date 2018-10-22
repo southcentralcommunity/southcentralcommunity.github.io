@@ -5,4 +5,4 @@ Please use the above navigation to select the events/groups you want to see by s
 Are we missing an event or group? Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues) and we will review.
 
 
-![TOLA](/images/map.png "TOLA")
+![TOLA Region](/images/map.png "TOLA")
