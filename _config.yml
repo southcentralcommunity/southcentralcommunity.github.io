@@ -17,4 +17,11 @@ collections:
   topics:
     output: true
     permalink: /topics/:path/
-    layout: topic
+    
+defaults:
+  -
+    scope:
+      path: "" 
+      type: "topics"
+    values:
+      layout: "topic"
