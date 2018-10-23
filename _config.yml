@@ -1,7 +1,7 @@
 markdown: kramdown
 theme: jekyll-theme-minimal
 title: SouthCentralCommunity.com
-description: Information about the groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)
+description: Information about the technology related groups and events in the TOLA Region (Texas, Oklahoma, Louisiana & Arkansas)
 
 collections:
   events:
@@ -17,3 +17,4 @@ collections:
   topics:
     output: true
     permalink: /topics/:path/
+    layout: topic
