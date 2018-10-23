@@ -25,3 +25,15 @@ defaults:
       type: "topics"
     values:
       layout: "topic"
+  -
+    scope:
+      path: "" 
+      type: "regions"
+    values:
+      layout: "region"
+  -
+    scope:
+      path: "" 
+      type: "states"
+    values:
+      layout: "state"
