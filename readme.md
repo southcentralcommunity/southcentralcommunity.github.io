@@ -55,7 +55,6 @@ In the file you create you will enter the details for your topic, it should look
 
 ```
 ---
-layout: topic
 slug: azure
 title: Azure
 ---
