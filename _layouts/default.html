@@ -44,16 +44,10 @@
                         {% endfor %}
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">By Topic</a>
-                      <div class="dropdown-menu">
-                          {% assign sortedTopics = site.topics | sort: 'title' %}
-                          {% for topic in sortedTopics %}
-                            <a class="dropdown-item" href="{{ topic.url }}">{{ topic.title }}</a>
-                          {% endfor %}
-                      </div>
-                    </li>
-                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/topics">Home</a>
+                  </li>
+                </ul>
             </nav>            
             <section>
                 {{ content }}
