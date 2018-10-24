@@ -6,11 +6,11 @@ layout: default
 
 {{ content }}
 
-<ul class="topic-list">
+<ul class="topic-list list-inline">
     {% assign sortedTopics = site.topics | sort: 'title' %}
     {% for topic in sortedTopics %}
-    <li>
-      <a href="{{ topic.url }}">{{ topic.title }}</a>
+    <li class="list-inline-item">
+      <a type="button" class="btn btn-light btn-block" href="{{ topic.url }}">{{ topic.title }}</a>
     </li>
     {% endfor %}
 </ul>
