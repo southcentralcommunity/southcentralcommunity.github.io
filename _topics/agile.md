@@ -1,0 +1,4 @@
+---
+slug: agile
+title: Agile
+---
