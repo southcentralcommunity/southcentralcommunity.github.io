@@ -9,5 +9,5 @@ Are we missing an event or group? Open an issue on our [GitHub site](https://git
 ### Share the info
 Share this site with your co-workers, friends, peers!
 
-Group/Event leaders please add this slide to the logistics information you share at your meetings.
+Group/Event leaders please add this slide/image to the logistics information you share at your meetings.
 <img src="/images/SouthCentralCommunity.png" alt="South Central Community" width="75%">
