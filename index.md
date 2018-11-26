@@ -2,8 +2,10 @@ Please use the above navigation to select the events/groups you want to see by s
 
 ## We need your HELP!
 
-### Know of groups/events that we are missing?
-Are we missing an event or group? Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues) and we will review.
+### Are we missing an event or group?
+
+ - Open an issue on our [GitHub site](https://github.com/southcentralcommunity/southcentralcommunity.github.io/issues)
+ - or email me, shawn@shawnweisfeld.com
 
 
 ### Share the info
