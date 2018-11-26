@@ -8,8 +8,7 @@ Please use the above navigation to select the events/groups you want to see by s
  - or email me, shawn@shawnweisfeld.com
 
 
-### Share the info
-Share this site with your co-workers, friends, peers!
+### Share this site with your co-workers, friends, peers!
 
 Group/Event leaders please add this slide/image to the logistics information you share at your meetings.
 <img src="/images/SouthCentralCommunity.png" alt="South Central Community" width="75%">
