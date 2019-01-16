@@ -1,0 +1,4 @@
+---
+slug: video
+title: Video
+---
