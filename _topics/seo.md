@@ -1,0 +1,4 @@
+---
+slug: seo
+title: SEO
+---
