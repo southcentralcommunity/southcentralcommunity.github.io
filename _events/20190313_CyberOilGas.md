@@ -5,5 +5,5 @@ title: "Cyber security for the Power and Oil and Gas Industries: threats, challe
 event_url: https://bit.ly/2WSQoKi
 start_date: 2019-03-13
 cost: FREE
-topics: [ oilgas, security ]
+topics: [ oil-gas, security ]
 ---
