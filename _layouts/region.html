@@ -11,7 +11,7 @@ layout: default
     {% assign sortedEvents = site.events | sort: 'start_date' | where: "region", page.region %}
     {% for event in sortedEvents %}
         <li>
-            <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a> - {{ event.start_date | date: "%A, %B %-d, %Y"}}
+            <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a> {{ event.description }} {{ event.start_date | date: "%A, %B %-d, %Y"}}
             {% if event.end_date %}
             to {{ event.end_date | date: "%A, %B %-d, %Y"}}
             {% endif %} ({{ event.cost }})
