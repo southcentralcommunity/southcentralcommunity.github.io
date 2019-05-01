@@ -1,0 +1,4 @@
+---
+slug: wearables
+title: Wearables
+---
