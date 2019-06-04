@@ -1,4 +1,4 @@
 ---
 slug: mobile
-title: mobile
+title: Mobile
 ---

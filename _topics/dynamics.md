@@ -1,4 +1,4 @@
 ---
 slug: dynamics
-title: dynamics
+title: Dynamics
 ---
