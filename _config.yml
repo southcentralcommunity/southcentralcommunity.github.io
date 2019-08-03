@@ -7,10 +7,8 @@ google_analytics: UA-128027829-1
 collections:
   events:
     output: true
-    hide: false
   groups:
     output: true
-    hide: false
   states:
     output: true
     permalink: /states/:path/
