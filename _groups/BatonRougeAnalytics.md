@@ -1,7 +1,7 @@
 ---
 state: LA
 region: BatonRouge
-title: "Baton Rouge Analytics User Group"
-group_url: 	https://batonrougeanalytics.pass.org/
+title: "BRAIN: Baton Rouge Analytics & Intelligence Network"
+group_url: 	http://www.gobrain.org
 topics: [ tableau, powerbi, analytics ]
 ---
