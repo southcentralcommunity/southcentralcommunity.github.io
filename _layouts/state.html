@@ -10,12 +10,14 @@ layout: default
 <ul>
     {% assign sortedEvents = site.events | sort: 'start_date' | where: "state", page.abbr %}
     {% for event in sortedEvents %}
+        {% if event.show %}
         <li>
             <a href="{{ event.event_url }}" target="_blank">{{ event.title }}</a> {{ event.description }} ({{ event.region }}) {{ event.start_date | date: "%A, %B %-d, %Y"}}
             {% if event.end_date %}
             to {{ event.end_date | date: "%A, %B %-d, %Y"}}
             {% endif %} ({{ event.cost }})
         </li>
+        {% endif %}    
     {% endfor %}
 </ul>
 
@@ -23,8 +25,10 @@ layout: default
 <ul>
     {% assign sortedGroups = site.groups | sort: 'title' | where: "state", page.abbr %}
     {% for group in sortedGroups %}
+        {% if group.show %}
         <li>
             <a href="{{ group.group_url }}" target="_blank">{{ group.title }}</a> ({{ group.region | join: ", " }}) {{ group.description }}
         </li>
+        {% endif %}
     {% endfor %}
 </ul>
