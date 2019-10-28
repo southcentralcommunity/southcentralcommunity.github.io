@@ -1,0 +1,4 @@
+---
+slug: art
+title: Art
+---
