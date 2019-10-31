@@ -6,4 +6,5 @@ event_url: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x774
 start_date: 2019-11-14
 end_date: 2019-11-14
 cost: FREE
+topics: [ microsoft, o365, cloud ]
 ---
