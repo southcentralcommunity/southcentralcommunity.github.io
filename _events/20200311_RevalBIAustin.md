@@ -1,9 +1,9 @@
 ---
 state: TX
-region: DFW
+region: Austin
 title: Reveal BI Roadshow
-event_url: https://www.revealbi.io/reveal-roadshow/dallas
-start_date: 2020-03-12
+event_url: https://www.revealbi.io/reveal-roadshow/austin
+start_date: 2020-03-11
 cost: Free
 topics: [ dataai ]
 ---
