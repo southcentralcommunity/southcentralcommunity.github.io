@@ -1,7 +1,7 @@
 ---
 state: TX
 region: Austin
-title: VueConf US
+title: VueConf US in Austin TX
 event_url: https://us.vuejs.org/
 start_date: 2020-03-03
 end_date: 2020-03-04
